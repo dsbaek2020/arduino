@@ -1,19 +1,24 @@
 /*************************************************** 
-  This is a library for our I2C LED Backpacks
-  Designed specifically to work with the Adafruit LED 7-Segment backpacks 
-  ----> http://www.adafruit.com/products/881
-  ----> http://www.adafruit.com/products/880
-  ----> http://www.adafruit.com/products/879
-  ----> http://www.adafruit.com/products/878
-  These displays use I2C to communicate, 2 pins are required to 
-  interface. There are multiple selectable I2C addresses. For backpacks
-  with 2 Address Select pins: 0x70, 0x71, 0x72 or 0x73. For backpacks
-  with 3 Address Select pins: 0x70 thru 0x77
-  Adafruit invests time and resources providing this open source code, 
-  please support Adafruit and open-source hardware by purchasing 
-  products from Adafruit!
-  Written by Limor Fried/Ladyada for Adafruit Industries.  
-  BSD license, all text above must be included in any redistribution
+  Jelly Coding  SensorBreadBoard-Arduino
+  2022. 3.1 Korean Independence Movement Day
+
+  
+  Group  -----  Part -----------------------------------------------------------------------------  
+  [display]     adafruit 0.56" 7-Segment LED HT16K33 Backpack (I2C)
+  [sensor]      TC74A7 I2C temp Sensor ---------------------- (I2C)
+  [display]     74595 x2 (LED or any unit) ------------------ (SPI)
+  [sensor]      GPS------------------------------------------  uart (serial or software serial)
+  [sensor]      HPMA1150S0(particle sensor)  ----------------  uart (serial or software serial)
+
+  [display]     16x2 Character LCD   ------------------------ (GPIO)
+  [sensor]      DTH11   ------------------------------------- (GPIO)
+  [sensor]      IR remote  ---------------------------------- (GPIO)
+  [digital-In]  SW+74HC14 ----------------------------------- (GPIO)
+  [PWM-Out]     Buzzer -------------------------------------- (GPIO)
+  
+  [MotorDriver] Arduino motor-Shield Rev3 --------------------(GPIO)
+  ------------------------------------------------------------------------------------------------
+  
  ****************************************************/
 
 #include <Wire.h> // Enable this line if using Arduino Uno, Mega, etc.
