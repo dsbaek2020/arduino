@@ -175,14 +175,17 @@ void loop() {
     Serial.print(F("Humidity: "));
     Serial.print(event.relative_humidity);
     Serial.println(F("%"));
+    
+    // set the cursor to column 0, line 1
+    // (note: line 1 is the second row, since counting begins with 0):
+    lcd.setCursor(0, 1);
+    // print the number of seconds since reset:
+    lcd.print(event.relative_humidity);
+    
   }
   
 
-  // set the cursor to column 0, line 1
-  // (note: line 1 is the second row, since counting begins with 0):
-  lcd.setCursor(0, 1);
-  // print the number of seconds since reset:
-  lcd.print(event.relative_humidity);
+
 
   
 }
